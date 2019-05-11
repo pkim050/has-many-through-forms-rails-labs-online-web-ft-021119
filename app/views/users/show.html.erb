@@ -1,1 +1,6 @@
+<h1>All <%= @user.username %>'s Comments</h1>
 
+<% @user.comments.each do |comment| %>
+  <%= comment.content %>
+  <%= link_to comment.post.title, comment.post %>
+<% end %>
