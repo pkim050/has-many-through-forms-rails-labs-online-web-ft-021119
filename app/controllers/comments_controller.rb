@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
       redirect_to @post
     else
       render :new
+    end
   end
 
   private
